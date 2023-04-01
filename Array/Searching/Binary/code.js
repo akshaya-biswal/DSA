@@ -11,13 +11,13 @@ function binarySearch(array, target) {
     }
 
     if (array[middle] > target) {
-      right = middle + 1;
+      right = middle - 1;
     } else {
-      left = middle - 1;
+      left = middle + 1;
     }
   }
 
   return -1;
 }
 
-console.log(binarySearch(arr, 40));
+console.log(binarySearch(arr, 40)); // 3
