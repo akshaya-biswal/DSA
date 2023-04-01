@@ -6,4 +6,4 @@ It is a **sequential search** algorithm that starts at one end and goes through 
 
 - Time Complexity: O(N)
 - Auxiliary Space: O(1)
-- Auxiliary Space: O(N), for using recursive stack space.
+- Auxiliary Space: O(N), for using recursive stack space
