@@ -1,31 +1,31 @@
-const array = [10, 20, 30, 40, 50];
+const arr = [10, 20, 30, 40, 50];
 
-function linearSearch(arr, target) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] === target) {
+function linearSearch(array, target) {
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === target) {
       return i;
     }
   }
   return -1;
 }
 
-console.log(linearSearch(array, 40)); // 3
+console.log(linearSearch(arr, 40)); // 3
 
 // --------------------------------------------------
 
-function linearSearchRecursive(arr, target) {
-  const length = arr.length - 1;
+function linearSearchRecursive(array, target) {
+  const length = array.length - 1;
 
   if (length === 0) {
     return -1;
   }
 
-  if (arr[length] === target) {
+  if (array[length] === target) {
     return length;
   } else {
-    arr.pop();
-    return linearSearchRecursive(arr, target);
+    array.pop();
+    return linearSearchRecursive(array, target);
   }
 }
 
-console.log(linearSearchRecursive(array, 40)); // 3
+console.log(linearSearchRecursive(arr, 40)); // 3
