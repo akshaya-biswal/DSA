@@ -11,7 +11,7 @@
 - Time Complexity: O(n<sup>2</sup>)
 - Space complexity is O(1)
 
-![Linear Search](../../Img/Selection-Sort-0.png)
-![Linear Search](../../Img/Selection-Sort-1.png)
-![Linear Search](../../Img/Selection-Sort-2.png)
-![Linear Search](../../Img/Selection-Sort-3.png)
+![Image](../../Img/Selection-Sort-0.png)
+![Image](../../Img/Selection-Sort-1.png)
+![Image](../../Img/Selection-Sort-2.png)
+![Image](../../Img/Selection-Sort-3.png)
