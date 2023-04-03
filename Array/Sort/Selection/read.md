@@ -1,4 +1,4 @@
-# Selection
+# Selection sort
 
 - It selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
 - This algorithm maintains two subarrays in a given array.
