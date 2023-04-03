@@ -11,7 +11,9 @@ function quickSort(array) {
   let pivot = array[lastIndex];
   let left = [];
   let right = [];
-  for (let i = 0; i < lastIndex; i++) {
+
+  for (let i = 0; i <= lastIndex - 1; i++) {
+    console.log(array[i]);
     if (array[i] < pivot) {
       left.push(array[i]);
     } else {
@@ -23,3 +25,5 @@ function quickSort(array) {
 }
 
 console.log(quickSort(arr));
+
+// NOTE1 : i <= lastIndex - 1 because we have already taken last index as pivot
