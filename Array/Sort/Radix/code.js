@@ -2,7 +2,7 @@ const arr = [121, 432, 564, 23, 1, 45, 788];
 
 function countingSort(array, place) {
   const size = array.length;
-  const lastIndex = size - 1; // 6
+  const lastIndex = size - 1;
 
   const max = Math.max(...array);
   const count = new Array(max + 1).fill(0);
