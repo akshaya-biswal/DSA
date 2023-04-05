@@ -1,10 +1,15 @@
 class Stack {
-  constructor() {
+  constructor(size) {
     this.items = [];
+    this.size = size;
   }
 
   push(item) {
-    this.items.push(item);
+    if (this.isFull()) {
+      console.log("Stack is full");
+    } else {
+      this.items.push(item);
+    }
   }
 
   pop() {
@@ -19,16 +24,20 @@ class Stack {
     return this.items.length === 0;
   }
 
-  size() {
+  isFull() {
+    return this.size === this.items.length;
+  }
+
+  currentSize() {
     return this.items.length;
   }
 
   print() {
-    console.log(this.items.toString());
+    console.log(this.items);
   }
 }
 
-const stack = new Stack();
+const stack = new Stack(2);
 
 stack.push(10);
 stack.push(20);
@@ -38,6 +47,5 @@ stack.print();
 stack.pop(); // Removes the last inserted item
 stack.print();
 
-console.log(stack.size()); // 2
-
-console.log(stack.isEmpty()); // false
+console.log(stack.currentSize());
+console.log(stack.isEmpty());
