@@ -1,51 +1,58 @@
+// program to implement stack data structure
 class Stack {
-  constructor(size) {
+  constructor(length) {
     this.items = [];
-    this.size = size;
+    this.length = length;
   }
 
-  push(item) {
-    if (this.isFull()) {
-      console.log("Stack is full");
-    } else {
-      this.items.push(item);
+  // add element to the stack
+  add(element) {
+    return this.items.push(element);
+  }
+
+  // remove element from the stack
+  remove() {
+    if (this.items.length > 0) {
+      return this.items.pop();
     }
   }
 
-  pop() {
-    this.items.pop();
-  }
-
+  // view the last element
   peek() {
     return this.items[this.items.length - 1];
   }
 
+  // check if the stack is empty
   isEmpty() {
-    return this.items.length === 0;
+    return this.items.length == 0;
   }
 
-  isFull() {
-    return this.size === this.items.length;
-  }
-
-  currentSize() {
+  // the size of the stack
+  size() {
     return this.items.length;
   }
 
-  print() {
-    console.log(this.items);
+  // empty the stack
+  clear() {
+    this.items = [];
   }
 }
 
-const stack = new Stack(2);
+let stack = new Stack(5);
+stack.add(1);
+stack.add(2);
+stack.add(4);
+stack.add(8);
+console.log(stack.items);
 
-stack.push(10);
-stack.push(20);
-stack.push(30);
-stack.print();
+stack.remove();
+console.log(stack.items);
 
-stack.pop(); // Removes the last inserted item
-stack.print();
+console.log(stack.peek());
 
-console.log(stack.currentSize());
 console.log(stack.isEmpty());
+
+console.log(stack.size());
+
+stack.clear();
+console.log(stack.items);
