@@ -20,22 +20,7 @@ class LinkedList {
     return this.size;
   }
 
-  print() {
-    if (this.isEmpty()) {
-      console.log("List is Empty");
-    } else {
-      let curr = this.head;
-      let listValues = "";
-
-      while (curr) {
-        listValues += `${curr.value} -> `;
-        curr = curr.next;
-      }
-
-      console.log(listValues + "null");
-    }
-  }
-
+  // Insert at the beginning - O(1)
   prepend(value) {
     const node = new Node(value);
 
@@ -50,7 +35,7 @@ class LinkedList {
     this.size++;
   }
 
-  // O(1)
+  // Insert at the end - O(1)
   append(value) {
     const node = new Node(value);
 
@@ -65,7 +50,7 @@ class LinkedList {
     this.size++;
   }
 
-  // Insert in the middle - O(n)
+  // Insert at the middle - O(n)
   insert(index, value) {
     if (index < 0 || index > this.size) {
       return;
@@ -191,6 +176,22 @@ class LinkedList {
       curr = next;
     }
     this.head = prev;
+  }
+
+  print() {
+    if (this.isEmpty()) {
+      console.log("List is Empty");
+    } else {
+      let curr = this.head;
+      let listValues = "";
+
+      while (curr) {
+        listValues += `${curr.value} -> `;
+        curr = curr.next;
+      }
+
+      console.log(listValues + "null");
+    }
   }
 }
 
