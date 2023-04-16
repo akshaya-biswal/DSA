@@ -53,12 +53,18 @@ class LinkedList {
   // Insert at the middle - O(n)
   insert(index, value) {
     if (index < 0 || index > this.size) {
+      console.log(
+        "Index value is less then 0 or greater then linked list size"
+      );
       return;
     }
 
     if (index === 0) {
       this.prepend(value);
+    } else if (index === this.size) {
+      this.append(value);
     } else {
+      console.log("size", this.size);
       const node = new Node(value);
       let prev = this.head;
 
@@ -197,14 +203,17 @@ class LinkedList {
 
 const list = new LinkedList();
 
-list.append(10);
 list.append(20);
 list.append(30);
+list.append(40);
 
-list.prepend(0);
+list.prepend(10);
 
-list.print(); // 0 -> 10 -> 20 -> 30 -> null
+list.insert(4, 50);
+
+list.print(); // 10 -> 20 -> 30 -> 40 -> 50 -> null
 
 list.removeFromFront();
 list.removeFromEnd();
-list.print(); // 10 -> 20 -> null
+
+list.print(); // 20 -> 30 -> 40 -> null
