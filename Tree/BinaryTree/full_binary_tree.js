@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class BST {
+class FBT {
   constructor() {
     this.root = null;
   }
@@ -36,7 +36,7 @@ class BST {
   }
 }
 
-const tree = new BST();
+const tree = new FBT();
 tree.root = new Node(1);
 tree.root.left = new Node(2);
 tree.root.right = new Node(3);
