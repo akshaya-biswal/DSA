@@ -58,4 +58,4 @@ tree.root.left.right = new Node(5);
 tree.root.right.left = new Node(6);
 tree.root.right.right = new Node(7);
 
-console.log("Full Binary Tree", tree.isPerfect(tree.root));
+console.log("Perfect Binary Tree", tree.isPerfect(tree.root));
