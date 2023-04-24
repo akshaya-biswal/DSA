@@ -26,8 +26,8 @@ class BinaryTree {
   }
 
   isPerfect(root) {
-    var d = findADepth(root);
-    return isPerfectRec(root, d, 0);
+    var d = this.findADepth(root);
+    return this.isPerfectRec(root, d, 0);
   }
 
   isPerfectRec(root, d, level) {
@@ -43,8 +43,8 @@ class BinaryTree {
 
     // Left and right subtrees must be perfect.
     return (
-      isPerfectRec(root.left, d, level + 1) &&
-      isPerfectRec(root.right, d, level + 1)
+      this.isPerfectRec(root.left, d, level + 1) &&
+      this.isPerfectRec(root.right, d, level + 1)
     );
   }
 }
