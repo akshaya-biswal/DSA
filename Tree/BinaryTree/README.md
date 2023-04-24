@@ -44,6 +44,8 @@ The difference between the height of the left and the right subtree for each nod
 
 ![Image](../img/tree_9.webp)
 
+[Detail Link](https://javascript.plainenglish.io/leetcode-110-balanced-binary-tree-javascript-49ec9ddf9318)
+
 ### Binary Tree Representation
 
 ![Image](../img/tree_10.webp)
