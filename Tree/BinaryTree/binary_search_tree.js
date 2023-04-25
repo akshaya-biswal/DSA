@@ -116,26 +116,6 @@ class BST {
     }
     return root;
   }
-
-  isFullTree(node) {
-    // if empty tree
-    if (node === null) {
-      return true;
-    }
-
-    // if leaf node
-    if (node.left === null && node.right === null) {
-      return true;
-    }
-
-    // if both left and right subtrees are not null
-    if (node.left !== null && node.right !== null) {
-      return this.isFullTree(node.left) && this.isFullTree(node.right);
-    }
-
-    // if none work
-    return false;
-  }
 }
 
 const bst = new BST();
