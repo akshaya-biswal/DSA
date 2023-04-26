@@ -8,4 +8,4 @@
 
 - Case Complexity : O(n\*log n)
 
-![Image](../../Img/Merge-Sort.png)
+![Image](../../_asset_/Merge-Sort.png)

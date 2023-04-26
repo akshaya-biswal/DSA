@@ -12,7 +12,7 @@
 
 - Space complexity : O(1)
 
-![Image](../../Img/Selection-Sort-0.png)
-![Image](../../Img/Selection-Sort-1.png)
-![Image](../../Img/Selection-Sort-2.png)
-![Image](../../Img/Selection-Sort-3.png)
+![Image](../../_asset_/Selection-Sort-0.png)
+![Image](../../_asset_/Selection-Sort-1.png)
+![Image](../../_asset_/Selection-Sort-2.png)
+![Image](../../_asset_/Selection-Sort-3.png)

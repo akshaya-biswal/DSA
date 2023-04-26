@@ -10,7 +10,7 @@
 
 - Space complexity is O(1) because an extra variable key is used.
 
-![Linear Search](../../Img/Insertion-sort-0.png)
-![Linear Search](../../Img/Insertion-sort-1.png)
-![Linear Search](../../Img/Insertion-sort-2.png)
-![Linear Search](../../Img/Insertion-sort-3.png)
+![Linear Search](../../_asset_/Insertion-sort-0.png)
+![Linear Search](../../_asset_/Insertion-sort-1.png)
+![Linear Search](../../_asset_/Insertion-sort-2.png)
+![Linear Search](../../_asset_/Insertion-sort-3.png)

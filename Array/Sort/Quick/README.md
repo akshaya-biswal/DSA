@@ -14,5 +14,5 @@
 
 - Space Complexity : O(log n)
 
-![Image](../../Img/Quick-Sort-0.png)
-![Image](../../Img/Quick-Sort-1.png)
+![Image](../../_asset_/Quick-Sort-0.png)
+![Image](../../_asset_/Quick-Sort-1.png)
