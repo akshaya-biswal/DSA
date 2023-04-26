@@ -4,9 +4,9 @@ It is similar to the ticket queue outside a cinema hall, where the first person 
 
 Queue follows the First In First Out (FIFO) rule - the item that goes in first is the item that comes out first.
 
-![Image](../../img/queue_0.webp)
+![Image](../../_asset_/queue_0.webp)
 
-![Image](../../img/queue.png)
+![Image](../../_asset_/queue.png)
 
 #### Basic Operations
 
@@ -16,4 +16,4 @@ Queue follows the First In First Out (FIFO) rule - the item that goes in first i
 - `Clear`: Remove all the items from queue
 - `Peek`: Get the value of the front of the queue without removing it
 
-![Image](../../img/queue_1.webp)
+![Image](../../_asset_/queue_1.webp)

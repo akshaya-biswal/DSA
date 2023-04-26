@@ -4,7 +4,7 @@
 
 - If elements with the same priority occur, they are served according to their order in the queue.
 
-![Image](../../img/queue_3.webp)
+![Image](../../_asset_/queue_3.webp)
 
 - `enqueue()`: It adds an element to the queue according to its priority.
 

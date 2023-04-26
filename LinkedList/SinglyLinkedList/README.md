@@ -2,4 +2,4 @@
 
 It is the most common. Each node has data and a pointer to the next node.
 
-![Image](../asset/linked-list-0.webp)
+![Image](../_asset_/linked-list-0.webp)

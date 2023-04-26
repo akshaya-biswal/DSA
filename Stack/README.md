@@ -4,12 +4,12 @@ A stack is a linear data structure that follows the principle of <b>Last In Firs
 
 Stack representation similar to a pile of plate
 
-![Image](./img/stack-plates.webp)
+![Image](./_asset_/stack-plates.webp)
 
 #### LIFO Principle of Stack
 
 In programming terms, putting an item on top of the stack is called push and removing an item is called pop.
-![Image](./img/stack-lifo.png)
+![Image](./_asset_/stack-lifo.png)
 
 #### Basic Operations (5)
 
@@ -28,4 +28,4 @@ In programming terms, putting an item on top of the stack is called push and rem
 - Before pushing, we check if the stack is already full
 - Before popping, we check if the stack is already empty
 
-![Image](./img/stack-operations.png)
+![Image](./_asset_/stack-operations.png)

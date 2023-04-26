@@ -2,7 +2,7 @@
 
 A tree is a nonlinear hierarchical data structure that consists of nodes connected by edges.
 
-![Image](./img/tree_0.webp)
+![Image](./_asset_/tree_0.webp)
 
 #### Why Tree Data Structure?
 
@@ -20,7 +20,7 @@ A node is an entity that contains a key or value and pointers to its child nodes
 
 It is the link between any two nodes.
 
-![Image](./img/tree_1.webp)
+![Image](./_asset_/tree_1.webp)
 
 ##### Height of a Node
 
@@ -30,7 +30,7 @@ the longest path from the node to a leaf node.
 
 The number of edges from the root to the node.
 
-![Image](./img/tree_2.webp)
+![Image](./_asset_/tree_2.webp)
 
 ##### Degree of a Node
 
@@ -40,4 +40,4 @@ The degree of a node is the total number of branches of that node.
 
 A collection of disjoint trees is called a forest. We can create a forest by cutting the root of a tree.
 
-![Image](./img/tree_3.webp)
+![Image](./_asset_/tree_3.webp)

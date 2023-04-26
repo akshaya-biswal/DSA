@@ -6,4 +6,4 @@
 
 - Thus, it does not follow the FIFO (First In First Out) rule.
 
-![Image](../../img/queue_4.webp)
+![Image](../../_asset_/queue_4.webp)
