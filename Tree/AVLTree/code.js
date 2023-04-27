@@ -12,26 +12,22 @@ class AVLTree {
     this.root = null;
   }
 
-  // A utility function to get
-  // the height of the tree
+  // get the current node height
   height(N) {
     if (N == null) return 0;
 
     return N.height;
   }
 
-  // A utility function to get
   // maximum of two integers
   max(a, b) {
     return a > b ? a : b;
   }
 
-  // A utility function to right
   // rotate subtree rooted with y
-  // See the diagram given above.
   rightRotate(y) {
-    var x = y.left;
-    var T2 = x.right;
+    const x = y.left;
+    const T2 = x.right;
 
     // Perform rotation
     x.right = y;
@@ -45,12 +41,10 @@ class AVLTree {
     return x;
   }
 
-  // A utility function to left
   // rotate subtree rooted with x
-  // See the diagram given above.
   leftRotate(x) {
-    var y = x.right;
-    var T2 = y.left;
+    const y = x.right;
+    const T2 = y.left;
 
     // Perform rotation
     y.left = x;
@@ -75,10 +69,14 @@ class AVLTree {
     /* 1. Perform the normal BST insertion */
     if (node == null) return new Node(key);
 
-    if (key < node.key) node.left = this.insert(node.left, key);
-    else if (key > node.key) node.right = this.insert(node.right, key);
-    // Duplicate keys not allowed
-    else return node;
+    if (key < node.key) {
+      node.left = this.insert(node.left, key);
+    } else if (key > node.key) {
+      node.right = this.insert(node.right, key);
+    } else {
+      console.log("Duplicate keys not allowed");
+      return node;
+    }
 
     /* 2. Update height of this ancestor node */
     node.height = 1 + this.max(this.height(node.left), this.height(node.right));
