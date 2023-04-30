@@ -83,20 +83,21 @@ class AVLTree {
     // Get the balance factor of this ancestor node to check whether this node became unbalanced
     const balance = this.getBalance(node);
 
-    // If this node becomes unbalanced, then there
-    // are 4 cases Left Left Case
+    // If this node becomes unbalanced, then there are 4 cases
+
+    // Left-Left
     if (balance > 1 && key < node.left.key) return this.rightRotate(node);
 
-    // Right Right Case
+    // Right-Right
     if (balance < -1 && key > node.right.key) return this.leftRotate(node);
 
-    // Left Right Case
+    // Left-Right
     if (balance > 1 && key > node.left.key) {
       node.left = this.leftRotate(node.left);
       return this.rightRotate(node);
     }
 
-    // Right Left Case
+    // Right-Left
     if (balance < -1 && key < node.right.key) {
       node.right = this.rightRotate(node.right);
       return this.leftRotate(node);
