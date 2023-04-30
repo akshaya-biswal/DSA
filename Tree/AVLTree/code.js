@@ -103,7 +103,7 @@ class AVLTree {
       return this.leftRotate(node);
     }
 
-    /* return the (unchanged) node pointer */
+    // return the (unchanged) node pointer
     return node;
   }
 
