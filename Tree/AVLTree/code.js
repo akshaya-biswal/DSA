@@ -15,7 +15,6 @@ class AVLTree {
   // get the current node height
   height(N) {
     if (N == null) return 0;
-
     return N.height;
   }
 
@@ -66,7 +65,7 @@ class AVLTree {
   }
 
   insert(node, key) {
-    /* 1. Perform the normal BST insertion */
+    // Perform the normal BST insertion
     if (node == null) return new Node(key);
 
     if (key < node.key) {
@@ -78,13 +77,11 @@ class AVLTree {
       return node;
     }
 
-    /* 2. Update height of this ancestor node */
+    // Update height of this ancestor node
     node.height = 1 + this.max(this.height(node.left), this.height(node.right));
 
-    /* 3. Get the balance factor of this ancestor
-			node to check whether this node became
-			unbalanced */
-    var balance = this.getBalance(node);
+    // Get the balance factor of this ancestor node to check whether this node became unbalanced
+    const balance = this.getBalance(node);
 
     // If this node becomes unbalanced, then there
     // are 4 cases Left Left Case
@@ -110,8 +107,6 @@ class AVLTree {
   }
 
   // A utility function to print preorder traversal
-  // of the tree.
-  // The function also prints height of every node
   preOrder(node) {
     if (node != null) {
       document.write(node.key + " ");
@@ -121,10 +116,8 @@ class AVLTree {
   }
 }
 
-// Driver code
-var tree = new AVLTree();
+const tree = new AVLTree();
 
-/* Constructing tree given in the above figure */
 tree.root = tree.insert(tree.root, 10);
 tree.root = tree.insert(tree.root, 20);
 tree.root = tree.insert(tree.root, 30);
