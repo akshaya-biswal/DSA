@@ -20,7 +20,7 @@ console.log(insertionSort([9, 5, 1, 4, 3]));
 
 // It takes an element from the unsorted part and inserts it into the sorted part of the array.
 
-// Outer for loop : for loop i will start from 1 because in the starting we will pick 0th index as sorted array
+// Outer for loop : It will start from 1 because in the starting we will pick 0th index as sorted array
 
 // Inner while loop : Compare current with the elements to its left (arr[j]). If arr[j] is greater than current, move arr[j] one position to the right (arr[j + 1] = arr[j]) to make space for current.
 
