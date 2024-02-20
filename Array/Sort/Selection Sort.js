@@ -22,4 +22,4 @@ console.log(selectionSort([20, 12, 10, 15, 2])); // [ 2, 10, 12, 15, 20 ]
 // This algorithm has been upgraded and enhanced in Heap Sort.
 
 // Resources:
-// https://www.sortvisualizer.com/selectionsort/
+// https://visualgo.net/en/sorting

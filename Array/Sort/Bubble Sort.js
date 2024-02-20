@@ -17,4 +17,4 @@ console.log(bubbleSort([-2, 45, 0, 11, -9]));
 // Inner loop : 0 to length - i - 1 becase i was already sorted at end
 
 // Resources:
-// https://www.sortvisualizer.com/bubblesort/
+// https://visualgo.net/en/sorting
